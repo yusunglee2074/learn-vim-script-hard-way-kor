@@ -36,15 +36,15 @@ Vim will seem to freeze when you press `dd`. If you press `<c-c>` you'll get Vim
 
 This mapping is actually _recursive_! When you press `dd`, Vim says:
 
-*   `dd` is mapped, so perform the mapping.
-    *   Open a line.
-    *   Exit insert mode.
-    *   Move down a line.
-    *   `dd` is mapped, so perform the mapping.
-        *   Open a line.
-        *   Exit insert mode.
-        *   Move down a line.
-        *   `dd` is mapped, so perform the mapping, and so on.
+* `dd` is mapped, so perform the mapping.
+  * Open a line.
+  * Exit insert mode.
+  * Move down a line.
+  * `dd` is mapped, so perform the mapping.
+     * Open a line.
+     * Exit insert mode.
+     * Move down a line.
+     * `dd` is mapped, so perform the mapping, and so on.
 
 This mapping can never finish running! Go ahead and remove this terrible thing with the following command:
 
